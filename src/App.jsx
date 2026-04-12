@@ -17,9 +17,6 @@ function App() {
         <div className="content">
           <p className="eyebrow">WhatsApp order</p>
           <h1>Stainless Steel Chopping Boards</h1>
-          <p className="description">
-            Stainless Steel chopping boards with Cash On Delivery available.
-          </p>
 
           <ul className="benefits" aria-label="Product benefits">
             <li>Cash On Delivery available</li>

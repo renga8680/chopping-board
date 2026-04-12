@@ -70,7 +70,7 @@
 .benefits {
   list-style: none;
   padding: 0;
-  margin: 0 0 28px;
+  margin: 12px 0 28px;
   display: grid;
   gap: 10px;
 }
