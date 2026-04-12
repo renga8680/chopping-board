@@ -128,29 +128,59 @@
   .product-card {
     grid-template-columns: 1fr;
     gap: 18px;
+    padding: 18px;
   }
 
   .image-shell {
-    min-height: 380px;
+    min-height: 420px;
   }
 
   .content {
-    padding: 6px 4px 12px;
+    padding: 2px 2px 10px;
+  }
+
+  .content h1 {
+    font-size: clamp(1.8rem, 7vw, 2.6rem);
+  }
+
+  .description {
+    margin: 14px 0 22px;
+    max-width: none;
+    font-size: 1rem;
+  }
+
+  .button {
+    width: 100%;
+    min-width: 0;
   }
 }
 
 @media (max-width: 520px) {
   .page {
-    padding: 14px;
+    padding: 12px;
   }
 
   .product-card {
-    padding: 14px;
-    border-radius: 24px;
+    padding: 12px;
+    border-radius: 22px;
+    gap: 14px;
   }
 
   .image-shell {
-    min-height: 300px;
+    min-height: 320px;
     border-radius: 18px;
+  }
+
+  .eyebrow {
+    letter-spacing: 0.14em;
+  }
+
+  .benefits {
+    gap: 8px;
+    margin-bottom: 22px;
+  }
+
+  .benefits li {
+    font-size: 0.98rem;
   }
 }

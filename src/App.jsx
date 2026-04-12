@@ -26,8 +26,6 @@ function App() {
           <a
             className="button"
             href={whatsappUrl}
-            target="_blank"
-            rel="noreferrer"
           >
             Shop Now
           </a>
