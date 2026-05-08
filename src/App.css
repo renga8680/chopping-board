@@ -344,27 +344,9 @@
 
 .reviews-grid {
   margin-top: 18px;
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 16px;
-  overflow-x: auto;
-  padding: 4px 2px 8px;
-  scroll-snap-type: x proximity;
-  scrollbar-color: rgba(133, 92, 27, 0.42) rgba(255, 244, 214, 0.7);
-  -webkit-overflow-scrolling: touch;
-}
-
-.reviews-grid::-webkit-scrollbar {
-  height: 10px;
-}
-
-.reviews-grid::-webkit-scrollbar-track {
-  background: rgba(255, 244, 214, 0.72);
-  border-radius: 999px;
-}
-
-.reviews-grid::-webkit-scrollbar-thumb {
-  background: rgba(133, 92, 27, 0.42);
-  border-radius: 999px;
 }
 
 .review-card {
@@ -585,6 +567,7 @@
   .collection-card {
     padding: 18px;
     border-radius: 24px;
+    overflow: hidden;
   }
 
   .footer-card {
@@ -599,8 +582,9 @@
   }
 
   .image-grid {
-    grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
+    grid-template-columns: repeat(1, minmax(0, 1fr));
     gap: 10px;
+    width: 100%;
   }
 
   .footer-grid {
@@ -694,8 +678,9 @@
   }
 
   .image-grid {
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-template-columns: repeat(1, minmax(0, 1fr));
     gap: 8px;
+    width: 100%;
   }
 
   .image-tile {
@@ -711,3 +696,7 @@
     gap: 6px;
   }
 }
+
+
+
+
